@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deploy-2022bcd0046
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - name: backend
+        image: docker.io/library/2022bcd0046-ankur-backend
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 5000
+        envFrom:
+        - configMapRef:
+            name: db-config-2022bcd0046
+        - secretRef:
+            name: secrets-2022bcd0046
+        resources:
+          requests:
+            cpu: "250m"    
+            memory: "256Mi"
+          limits:
+            cpu: "500m" 
+            memory: "512Mi"
