@@ -1,4 +1,4 @@
-# <center>Assignment - 2: Jenkins Pipeline</center>
+# <center>Assignment - 3: Minikube & K8s</center>
 
 ### Name: Ankur Majumdar
 ### Roll No: 2022BCD0046
@@ -21,7 +21,7 @@ A Full Stack Web Application using React, Node.js, MongoDB that Allows Student D
 
 ---
 
-**GitHub Repo:** [https://github.com/Ankur7891/](https://github.com/Ankur7891/)
+**GitHub Repo:** [https://github.com/Ankur7891/MiniKube-Deploy-App/](https://github.com/Ankur7891/MiniKube-Deploy-App/)
 
 ---
 
